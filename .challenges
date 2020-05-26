@@ -1,0 +1,13 @@
+- config/doctrine.yml does not exist
+- had to install postgres first
+- fos user unninstalled again after installation as postgres was not installed / configred
+-   An exception occurred in driver: could not find driver  
+---> Solution: install pdo_psql
+- An exception occurred in driver: SQLSTATE[08006] [7] could not connect to s  
+  erver: Connection refused                                                    
+  	Is the server running on host "127.0.0.1" and accepting                     
+  	TCP/IP connections on port 3306?  
+---> Solution: Wrong port from prev. configuration in .env 
+- Script cache:clear returned with error code 1 !!    
+	The child node "db_driver" at path "fos_user" must be configured.
+---> Solution: 

@@ -1,0 +1,39 @@
+26/05/2020
+06:15 - 06:45
+07:40 - 07:50
+09:10 - 09:30
+    solution: database version in .env > database url was wrong (5.7), not found via grep since it's a hidden file :-(
+- read user from secuirity token to add to the promotion
+- set createdAt in the controller of promotion
+->>>> now saves successfully 
+
+22/05/2020
+06:20 - 06:50: 
+    installed symfony cli
+    update composer
+    created new project symfony 4.4
+
+
+24/04/2020
+start: 6:15 - call spritzer
+start: 6:58 - 7:29
+start: 7:40 - 8:03
+
+25/05/2020
+start: 06:20 - 7:05
+    fixed: Script cache:clear returned with error code 1 !!
+        The child node "db_driver" at path "fos_user" must be configured.
+
+    solution: https://ourcodeworld.com/articles/read/794/how-to-install-and-configure-fosuserbundle-in-symfony-4 
+start 07:05 - 07:10 
+start 13:35 - 13:55
+    Created Promotion, PromotionHasProducts, Product classes via cli
+start 21:05 - 21:45
+    Added createdBy to all entities, created MainController 
+    Created initial form for pomotions
+start 22:30 - 22:45
+    issue:  php bin/console doctrine:schema:update --force
+        An exception occurred while executing 'SELECT min_value, increment_by FROM      "fos_user_id_seq"':                                                          
+                                                                               
+        SQLSTATE[42703]: Undefined column: 7 ERROR:  column "min_value" does not exist                                                                          
+        LINE 1: SELECT min_value, increment_by FROM "fos_user_id_seq"
